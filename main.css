@@ -1,0 +1,62 @@
+/*------full page stylings------*/
+html, body {
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+/*------input section stylings-----*/
+section {
+  position: fixed;
+  display: inline-block;
+  float: left;
+  text-align: center;
+  height: 100%;
+  width: 50%;
+  background-color: #455a64;
+  color: #fff;
+}
+
+h1 {
+  font-size: 5.5rem;
+  font-weight: 800;
+  margin: 10rem 0 5rem 0;
+}
+
+img {
+  height: 4.3rem;
+}
+
+input {
+  height: 2.2rem;
+  width: 85%;
+  display: block;
+  margin: 0 auto 4.5rem auto;
+  padding: 1.3rem 0 0 1rem;
+  border: 2px solid lightgray;
+}
+
+input::placeholder {
+  font-size: 2.5rem;
+  color: gray;
+  opacity: .5
+}
+
+.enter-button{
+  height: 3.4rem;
+  width: 88%;
+  border: none;
+  background-color: #ffc107;
+  color:#fff;
+  font-size: x-large;
+  font-weight: 800
+}
+
+/*-------card main stylings------*/
+main {
+  overflow: scroll;
+  display: inline-block;
+  float: right;
+  height: 100%;
+  width: 50%;
+  background-color: #cfd8dc;
+}
