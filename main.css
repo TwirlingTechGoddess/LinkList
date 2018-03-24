@@ -60,3 +60,46 @@ main {
   width: 50%;
   background-color: #cfd8dc;
 }
+
+article {
+  height: ;
+  border: 2px solid #607D8B;
+  margin: 30px;
+  padding: 20px 20px 10px 20px;
+  background-color: #FFF;
+}
+
+h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #455A64;
+}
+
+a {
+  color: #607D8B;
+  text-decoration-color: #F2F4F4;
+  font-size: 28px;
+  display: block;
+  margin: 25px 0;
+}
+
+.article-buttons {
+  color: #455A64;
+  border: none;
+  font-size: 19px;
+  text-decoration-line: underline;
+  text-decoration-color: #F2F4F4; 
+}
+
+.delete-button {
+  float: right;
+}
+
+
+
+
+
+
+
+
