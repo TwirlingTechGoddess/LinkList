@@ -12,7 +12,7 @@ var deleteButton = document.getElementById('delete-button');
 
 
 // -----------------listeners------------------
-enterButton.addEventListener('click', addBookmark());
+enterButton.addEventListener('click', userInput());
 
 
 
@@ -21,21 +21,33 @@ enterButton.addEventListener('click', addBookmark());
 // -----------functionality-------------
 
 function addBookmark() {
-  debugger
   var createdArticle = document.createElement('article');
-  createdArticle.innerHTML =
+  var mainSection = document.querySelector('main');
+    createdArticle.innerHTML =
      `<h2>(websiteTitle.value)</h2>
       <hr />
       <a href="(websiteUrl.value)" target="_blank">(websiteUrl.value)</a>
       <hr />
       <button id="read-button" class="article-buttons" type="submit" name="Read">Read</button>
       <button id="delete-button" class="article-buttons delete-button" type="submit" name="Delete">Delete</button>`;
-  // // websiteTitle.value = cardTitle;
-  // // websiteUrl.value = cardUrl 
-    console.log('createdArticle.value');
+    mainSection.appendChild(createdArticle);
+    
+    
+}
+
+function userInput() {
+  console.log('createdArticle.value');
+    cardTitle.textContent =  websiteTitle.value; 
+    cardUrl.textContent = websiteUrl.value;  
 }
 
 
+// readButton.addEventListener('click', )
+// innerText the H2 href and a value 
+
+
+// var p = document.createElement("article");
+// document.main.appendChild(createdArticle);
 
 // createTextNode
 // .append
