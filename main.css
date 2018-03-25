@@ -9,10 +9,10 @@ section {
   position: fixed;
   display: inline-block;
   float: left;
-  text-align: center;
   height: 100%;
   width: 50%;
   background-color: #455a64;
+  text-align: center;
   color: #fff;
 }
 
@@ -27,9 +27,9 @@ img {
 }
 
 input {
+  display: block;
   height: 2.8rem;
   width: 80%;
-  display: block;
   margin: 0 auto 4.5rem auto;
   padding-top: .75rem;
   padding-left: 1rem;
@@ -39,16 +39,59 @@ input::placeholder {
   font-size: 2.25rem;
 }
 
-button{
-
+.enter-button{
+  height: 3.4rem;
+  width: 88%;
+  border: none;
+  background-color: #ffc107;
+  color:#fff;
+  font-size: x-large;
+  font-weight: 800
 }
 
 /*-------card main stylings------*/
 main {
-  overflow: scroll;
   display: inline-block;
   float: right;
   height: 100%;
   width: 50%;
   background-color: #cfd8dc;
+  overflow: scroll;
 }
+
+article {
+  border: 2px solid #607D8B;
+  background-color: #FFF;
+  margin: 30px;
+  padding: 20px 20px 10px 20px;
+}
+
+h2 {
+  color: #455A64;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+a {
+  display: block;
+  color: #607D8B;
+  text-decoration-color: #F2F4F4;
+  font-size: 28px;
+  margin: 25px 0;
+}
+
+.article-buttons {
+  border: none;
+  color: #455A64;
+  text-decoration-line: underline;
+  text-decoration-color: #F2F4F4; 
+  font-size: 19px;
+}
+
+.delete-button {
+  float: right;
+}
+
+
+
