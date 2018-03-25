@@ -9,17 +9,17 @@ section {
   position: fixed;
   display: inline-block;
   float: left;
-  text-align: center;
   height: 100%;
   width: 50%;
   background-color: #455a64;
+  text-align: center;
   color: #fff;
 }
 
 h1 {
   font-size: 5.5rem;
   font-weight: 800;
-  margin: 10rem 0 5rem 0;
+  margin: 9rem 0 5rem 0;
 }
 
 img {
@@ -27,18 +27,16 @@ img {
 }
 
 input {
-  height: 2.2rem;
-  width: 85%;
   display: block;
+  height: 2.8rem;
+  width: 80%;
   margin: 0 auto 4.5rem auto;
-  padding: 1.3rem 0 0 1rem;
-  border: 2px solid lightgray;
+  padding-top: .75rem;
+  padding-left: 1rem;
 }
 
 input::placeholder {
-  font-size: 2.5rem;
-  color: gray;
-  opacity: .5
+  font-size: 2.25rem;
 }
 
 .enter-button{
@@ -53,27 +51,34 @@ input::placeholder {
 
 /*-------card main stylings------*/
 main {
-  overflow: scroll;
   display: inline-block;
   float: right;
   height: 100%;
   width: 50%;
   background-color: #cfd8dc;
+  overflow: scroll;
 }
 
+article {
+  border: 2px solid #607D8B;
+  background-color: #FFF;
+  margin: 30px;
+  padding: 20px 20px 10px 20px;
+}
+
+h2 {
+  color: #455A64;
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+  
 article {
   height: ;
   border: 2px solid #607D8B;
   margin: 30px;
   padding: 20px 20px 10px 20px;
   background-color: #FFF;
-}
-
-h2 {
-  font-size: 2.4rem;
-  font-weight: 800;
-  margin-bottom: 20px;
-  color: #455A64;
 }
 
 a {
@@ -85,21 +90,13 @@ a {
 }
 
 .article-buttons {
-  color: #455A64;
   border: none;
-  font-size: 19px;
+  color: #455A64;
   text-decoration-line: underline;
   text-decoration-color: #F2F4F4; 
+  font-size: 19px;
 }
 
 .delete-button {
   float: right;
 }
-
-
-
-
-
-
-
-
