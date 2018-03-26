@@ -29,7 +29,7 @@ img {
 input {
   display: block;
   height: 2.8rem;
-  width: 80%;
+  width: 85%;
   margin: 0 auto 4.5rem auto;
   padding-top: .75rem;
   padding-left: 1rem;
@@ -46,7 +46,7 @@ input::placeholder {
   background-color: #ffc107;
   color:#fff;
   font-size: x-large;
-  font-weight: 800
+  font-weight: 800;
 }
 
 /*-------card main stylings------*/
@@ -60,33 +60,33 @@ main {
 }
 
 article {
-  border: 2px solid #607D8B;
+  border: .125rem solid #607D8B;
   background-color: #FFF;
-  margin: 30px;
-  padding: 20px 20px 10px 20px;
+  margin: 2rem;
+  padding: 1.25rem 1.25rem .725rem 1.25rem;
 }
 
 h2 {
   color: #455A64;
   font-size: 2.4rem;
   font-weight: 800;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
   
 article {
   height: ;
-  border: 2px solid #607D8B;
-  margin: 30px;
-  padding: 20px 20px 10px 20px;
+  border: .125rem solid #607D8B;
+  margin: 1.875rem;
+  padding: 1.25rem 1.25rem .725rem 1.25rem;
   background-color: #FFF;
 }
 
 a {
   color: #607D8B;
   text-decoration-color: #F2F4F4;
-  font-size: 28px;
+  font-size: 1.75rem;
   display: block;
-  margin: 25px 0;
+  margin: 1.5625rem 0;
 }
 
 .article-buttons {
@@ -94,7 +94,7 @@ a {
   color: #455A64;
   text-decoration-line: underline;
   text-decoration-color: #F2F4F4; 
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
 .delete-button {

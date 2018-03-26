@@ -8,12 +8,14 @@ var cardTitle = document.querySelector('h2');
 var cardUrl = document.querySelector('a');
 var readButton = document.getElementById('read-button');
 var deleteButton = document.getElementById('delete-button');
+var createdArticle = document.createElement('article');
 
 
 
 // -----------------listeners------------------
 enterButton.addEventListener('click', userInput());
-
+readButton.addEventListener('click', readToggle());
+deleteButton.addEventListener('click', removeBookmark())
 
 
 
@@ -21,7 +23,6 @@ enterButton.addEventListener('click', userInput());
 // -----------functionality-------------
 
 function addBookmark() {
-  var createdArticle = document.createElement('article');
   var mainSection = document.querySelector('main');
     createdArticle.innerHTML =
      `<h2>(websiteTitle.value)</h2>
@@ -31,27 +32,25 @@ function addBookmark() {
       <button id="read-button" class="article-buttons" type="submit" name="Read">Read</button>
       <button id="delete-button" class="article-buttons delete-button" type="submit" name="Delete">Delete</button>`;
     mainSection.appendChild(createdArticle);
-    
-    
 }
 
 function userInput() {
+  addBookmark();
   console.log('createdArticle.value');
     cardTitle.textContent =  websiteTitle.value; 
     cardUrl.textContent = websiteUrl.value;  
 }
 
+function readToggle() {
+  if (createdArticle.classList.value = ""){
+    createdArticle.classList("class", ".read")
+  } else {
+    createdArticle.removeAttribute("class")
+  }
+}
 
-// readButton.addEventListener('click', )
-// innerText the H2 href and a value 
+function removerBookmark() {
+  mainSection.remove(createdArticle);
+}
 
 
-// var p = document.createElement("article");
-// document.main.appendChild(createdArticle);
-
-// createTextNode
-// .append
-// .append()
-// .appendChild()
-// cardTitle.innerHTML = websiteTitle.value
-// cardUrl.innerHTML = websiteTitle.value
