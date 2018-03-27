@@ -31,8 +31,9 @@ input {
   height: 2.8rem;
   width: 85%;
   margin: 0 auto 4.5rem auto;
-  padding-top: .75rem;
+  padding-top: .65rem;
   padding-left: 1rem;
+  font-size: 2rem;
 }
 
 input::placeholder {
@@ -59,13 +60,6 @@ main {
   overflow: scroll;
 }
 
-article {
-  border: .125rem solid #607D8B;
-  background-color: #FFF;
-  margin: 2rem;
-  padding: 1.25rem 1.25rem .725rem 1.25rem;
-}
-
 h2 {
   color: #455A64;
   font-size: 2.4rem;
@@ -76,7 +70,7 @@ h2 {
 article {
   height: ;
   border: .125rem solid #607D8B;
-  margin: 1.875rem;
+  margin: 2rem;
   padding: 1.25rem 1.25rem .725rem 1.25rem;
   background-color: #FFF;
 }
@@ -89,12 +83,40 @@ a {
   margin: 1.5625rem 0;
 }
 
+hr {
+}
+
 .article-buttons {
   border: none;
   color: #455A64;
   text-decoration-line: underline;
   text-decoration-color: #F2F4F4; 
   font-size: 1.1875rem;
+}
+/*----------when read & hover-------*/
+.enter-button:hover {
+  background-color: #FFD773;
+}
+
+a:hover {
+  color: #455A64;
+  text-decoration-color: #FFC107;
+  font-weight: 800;
+}
+
+.article-buttons:hover {
+  text-decoration-color: #FFC107;
+  font-weight: 800;
+}
+
+.color {
+  background-color: #F2F4F4;
+  color: #F05A28;
+  font-weight: 800;
+}
+
+.read {
+  background-color: #F2F4F4;
 }
 
 .delete-button {
