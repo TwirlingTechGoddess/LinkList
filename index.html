@@ -5,16 +5,18 @@
   <link rel="stylesheet" type="text/css" href="reset.css">
   <title>Linked List</title>
   <link rel="stylesheet" type="text/css" href="main.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
 </head>
 <body>
   <section>
     <h1>Linked <img src="linked-list-logo (1).svg" alt="linked-list-logo"> List</h1>
-    <form for="input-Title-Url" action="index-submit" method="get" accept-charset="utf-8">
+    <form for="input-Title-Url">
+      <label id="counter" for="input-Title-Text"># of Bookmarks:</label>
       <input id="input-Title-Text" type="text" name="Website Title" placeholder="Website Title">
+      <label id="reader" for="input-Title-Url"># of Bookmarks Read:</label>
       <input id="input-Title-Url" type="Url"  name="Website URL" placeholder="Website URL">
     </form>
-    <button id="enter-button" class="enter-button" type="submit" >Enter</button>
+    <button id="enter-button" class="enter-button" type="submit" disabled>Enter</button>
   </section>
   </section>
   <main>
