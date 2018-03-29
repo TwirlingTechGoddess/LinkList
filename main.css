@@ -4,14 +4,6 @@ html, body {
   height: 100%;
 }
 
-/*//-----RESPONSIVENESS--------//*/
-
-/*body {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-    grid-template-rows: repeat(2, 50%);
-}*/
-
 
 /*------input section stylings-----*/
 section {
@@ -72,8 +64,9 @@ main {
 h2 {
   color: #455A64;
   font-size: 2.4rem;
-  font-weight: 800;
+  font-weight: 400;
   margin-bottom: 1.25rem;
+  overflow: scroll;
 }
   
 article {
@@ -90,6 +83,7 @@ a {
   font-size: 1.75rem;
   display: block;
   margin: 1.5625rem 0;
+  overflow: scroll;
 }
 
 .article-buttons {
@@ -98,10 +92,25 @@ a {
   text-decoration-line: underline;
   text-decoration-color: #F2F4F4; 
   font-size: 1.1875rem;
+  background-color: transparent;
 }
+
+.delete-cards {
+  height: 1.75rem;
+  width: 8.5rem;
+  font-weight: 400;
+  background-color: #FFD773;
+  color: red;
+}
+
 /*----------when read & hover-------*/
+
 .enter-button:hover {
   background-color: #FFD773;
+}
+
+.delete-cards:hover {
+  background-color: powderblue;
 }
 
 a:hover {
@@ -159,16 +168,13 @@ a:hover {
     h1 {
       font-size: 2.4rem;
     }
+    
     img {
       height: 2.0rem;
     }
 }
 
 @media only screen and (max-width: 600px) {
-    /*section main {
-      overflow: scroll;
-    }*/
-    
     section  { 
       float: left;
       width: 100%;
@@ -262,6 +268,21 @@ a:hover {
 
     .article-buttons {
       font-size: 0.9rem;
+    }
+
+    .enter-button:hover {
+      background-color: #FFD773;
+    }
+
+    a:hover {
+      color: #455A64;
+      text-decoration-color: #FFC107;
+      font-weight: 800;
+    }
+
+    .article-buttons:hover {
+      text-decoration-color: #FFC107;
+      font-weight: 800;
     }
 }
 
