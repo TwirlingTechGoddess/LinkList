@@ -11,6 +11,7 @@ var deleteButton = document.getElementById('delete-button');
 var counter = document.getElementById('counter');
 var reader = document.getElementById('reader')
 var formField = document.querySelector('form');
+var deleteCards  = document.querySelector('#delete-cards');
 var countCountula = 0; 
 // var countReadula = 0;
 
@@ -19,7 +20,7 @@ formField.addEventListener('keyup', enterBtnDisable)
 enterButton.addEventListener('click', addBookmark);
 mainSection.addEventListener('click', readToggle);
 mainSection.addEventListener('click', removeBookmark);
-
+deleteCards.addEventListener('click', removeReadCards);
 
 // -----------functionality-------------
 
@@ -49,7 +50,7 @@ function addBookmark() {
     clearInputField();
   } else {
     countCountula--;
-    counter.innerText = `# of bookmarks: ${countCountula}`;
+    counter.innerText = `# of Bookmarks: ${countCountula}`;
     alert('ERROR, PLEASE FILL OUT BOTH FIELDS!')
   }
 }
@@ -61,7 +62,7 @@ function readToggle() {
   var buttonTarget = event.target.closest('button')
     buttonTarget.classList.toggle('color');
   }
-  readOrUnread = document.querySelectorAll('.read');
+  var readOrUnread = document.querySelectorAll('.read');
   reader.innerText = `# of Bookmarks Read: ${readOrUnread.length}`;
 }
 
@@ -80,4 +81,30 @@ function clearInputField() {
   websiteTitle.value = "";
   websiteUrl.value = "";
 }
+
+
+function removeReadCards() {
+  var readOrUnread = document.querySelectorAll('.read');
+  countCountula = countCountula - readOrUnread.length;
+  for ( var i = 0; i < readOrUnread.length; i++) {
+    readOrUnread[i].remove()
+  }
+
+  reader.innerText = `# of Bookmarks Read: ${0}`;
+  counter.innerText = `# of Bookmarks: ${countCountula}`;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
