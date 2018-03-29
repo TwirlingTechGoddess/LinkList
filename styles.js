@@ -17,7 +17,7 @@ var countCountula = 0;
 
 // -----------------listeners------------------
 formField.addEventListener('keyup', enterBtnDisable)
-enterButton.addEventListener('click', addBookmark);
+enterButton.addEventListener('click', checkValidation);
 mainSection.addEventListener('click', readToggle);
 mainSection.addEventListener('click', removeBookmark);
 deleteCards.addEventListener('click', removeReadCards);
@@ -41,7 +41,7 @@ function addBookmark() {
   var userInputInfo=
      `<h2>${websiteTitle.value}</h2>
       <hr />
-      <a href="http://${websiteUrl.value}" target="_blank">${websiteUrl.value}</a>
+      <a href="${websiteUrl.value}" target="_blank">${websiteUrl.value}</a>
       <hr />
       <button id="read-button" class="article-buttons" type="submit" name="Read">Read</button>
       <button id="delete-button" class="article-buttons delete-button" type="submit" name="Delete">Delete</button>`;
@@ -94,7 +94,14 @@ function removeReadCards() {
   counter.innerText = `# of Bookmarks: ${countCountula}`;
 }
 
-
+function checkValidation() {
+  var reduxCode = /^(?:(?:https?|ftp):\/\/)(?:\S+(?::\S*)?@)?(?:(?!(?:10|127)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)(?:\.(?:[a-z\u00a1-\uffff0-9]-*)*[a-z\u00a1-\uffff0-9]+)*(?:\.(?:[a-z\u00a1-\uffff]{2,}))\.?)(?::\d{2,5})?(?:[/?#]\S*)?$/i;
+  if (reduxCode.test(websiteUrl.value) === true) {
+    addBookmark();
+  } else {
+    alert('Url must begin with "https://"');
+  }
+}
 
 
 
